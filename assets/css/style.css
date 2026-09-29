@@ -1,0 +1,185 @@
+/* Shared stylesheet for every page.
+   Class-based selectors only, relative units, block/inline-block layout. */
+
+/* ---------- Page ---------- */
+.site {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 100%;
+  line-height: 1.6;
+  color: #222222;
+  background-color: #eef0f2;
+}
+
+.page {
+  width: 90%;
+  max-width: 60em;
+  margin: 1.5em auto;
+  background-color: #ffffff;
+  border-radius: 0.5em;
+  overflow: hidden;
+  box-shadow: 0 0.25em 1em rgba(0, 0, 0, 0.12);
+}
+
+/* ---------- Banner ---------- */
+.banner {
+  background-color: #222831;
+  color: #eeeeee;
+  padding: 1.25em 1em;
+  text-align: center;
+}
+.banner-title {
+  margin: 0 0 0.25em 0;
+  font-size: 2em;
+  letter-spacing: 0.05em;
+}
+.banner-subtitle {
+  margin: 0;
+  font-size: 0.95em;
+  color: #cfcfcf;
+}
+
+/* ---------- Top navigation ---------- */
+.nav-bar {
+  background-color: #393e46;
+  border-bottom: 0.25em solid #00adb5;
+  text-align: center;
+}
+.nav-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+.nav-item {
+  display: inline-block;
+  margin: 0;
+}
+.nav-link {
+  display: inline-block;
+  padding: 0.75em 1.25em;
+  color: #eeeeee;
+  text-decoration: none;
+  text-align: center;
+  font-weight: bold;
+  transition: background-color 0.2s, color 0.2s;
+}
+.nav-link:link,
+.nav-link:visited {
+  color: #eeeeee;
+  text-decoration: none;
+}
+.nav-link:hover,
+.nav-link:focus {
+  background-color: #00adb5;
+  color: #ffffff;
+  text-decoration: none;
+}
+.nav-link.active,
+.nav-link.active:hover {
+  background-color: #d4f04a;
+  color: #222222;
+  text-decoration: none;
+}
+
+/* ---------- Main content ---------- */
+.content {
+  padding: 1.5em 2em;
+}
+.section {
+  margin: 0;
+}
+.page-title {
+  margin-top: 0;
+  padding-bottom: 0.3em;
+  border-bottom: 0.1em solid #00adb5;
+  color: #222831;
+}
+.heading-3,
+.heading-4,
+.heading-5,
+.heading-6 {
+  color: #393e46;
+  margin: 1.25em 0 0.5em 0;
+}
+.heading-6 {
+  font-style: italic;
+  color: #555555;
+}
+.text {
+  margin: 0 0 1em 0;
+}
+.bullet-list,
+.number-list {
+  margin: 0 0 1em 0;
+  padding-left: 1.75em;
+}
+.list-item {
+  margin-bottom: 0.3em;
+}
+.text-link {
+  color: #008a91;
+  font-weight: bold;
+}
+.text-link:hover {
+  color: #222831;
+}
+
+/* ---------- Figures ---------- */
+.figure {
+  margin: 1em 0;
+}
+.figure-image {
+  width: 9.5em;
+  height: 9.5em;
+  border-radius: 0.5em;
+}
+.caption {
+  font-size: 0.85em;
+  font-style: italic;
+  color: #555555;
+}
+
+/* ---------- Embedded data table (School page) ---------- */
+.schedule {
+  width: 100%;
+  margin: 0.75em 0 1em 0;
+  border-collapse: collapse;
+  border: 0.1em solid #222831;
+}
+.schedule-head {
+  background-color: #222831;
+  color: #d4f04a;
+  padding: 0.6em 0.8em;
+  text-align: left;
+  text-transform: uppercase;
+  font-size: 0.85em;
+  letter-spacing: 0.05em;
+}
+.schedule-cell {
+  padding: 0.6em 0.8em;
+  border-bottom: 0.0625em solid #cccccc;
+  text-align: left;
+}
+.schedule-row {
+  background-color: #ffffff;
+}
+.schedule-row-alt {
+  background-color: #f2f7da;
+}
+.schedule-row:hover {
+  background-color: #d9f3f4;
+}
+
+/* ---------- Footer ---------- */
+.footer {
+  background-color: #222831;
+  text-align: center;
+  padding: 0.75em 1em;
+}
+.footer-text {
+  margin: 0;
+  font-size: 0.85em;
+  color: #cfcfcf;
+}
